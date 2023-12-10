@@ -1,7 +1,19 @@
-const Products = () => {
-  return (
-    <div>Products</div>
-  )
+import ProductItem from "./ProductItem"
+import productData from "./productData"
+
+const Products = (props) => {
+
+    return (
+        <div className="grid grid-cols-3 gap-10 mb-8">
+            {
+                productData.map((product) => {
+                    return (
+                        <ProductItem key={product.id} product={product} setCart={props.setCart} />
+                    )
+                })
+            }
+        </div>
+    )
 }
 
 export default Products
