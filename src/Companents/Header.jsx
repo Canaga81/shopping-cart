@@ -1,9 +1,10 @@
-import React from 'react'
+import CartIcon from "./CartIcon"
 
 const Header = () => {
     return (
-        <div>
-            <h1>React ve Tailwind CSS Sepet Uygulamasi</h1>
+        <div className="flex items-center justify-between mb-6">
+            <h1 className="text-3xl font-semibold">React ve Tailwind CSS Sepet Uygulamasi</h1>
+            <CartIcon />
         </div>
     )
 }
