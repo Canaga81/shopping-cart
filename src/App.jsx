@@ -18,7 +18,7 @@ function App() {
 
       <Header cart={cart} />
       <Products cart={cart} setCart={setCart} />
-      <Cart cart={cart} emptyCart={emptyCart} />
+      <Cart cart={cart} emptyCart={emptyCart}  />
 
     </div>
 

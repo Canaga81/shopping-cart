@@ -7,6 +7,7 @@ const Cart = ({ cart, emptyCart }) => {
     if (cart.length === 0) return;
 
     return (
+
         <div className="border ml-auto w-72 p-4 mt-2 rounded-lg shadow-lg">
 
             <h2 className="text-2xl font-semibold mb-4">Sepet</h2>

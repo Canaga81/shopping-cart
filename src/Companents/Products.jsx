@@ -8,7 +8,7 @@ const Products = (props) => {
             {
                 productData.map((product) => {
                     return (
-                        <ProductItem key={product.id} product={product} setCart={props.setCart} />
+                        <ProductItem key={product.id} product={product} cart={props.cart} setCart={props.setCart} />
                     )
                 })
             }
